@@ -1,0 +1,67 @@
+/* CSS Reset */
+*{
+    margin:0;
+    padding:0;
+}
+/*CSS Variables*/
+:root{
+    --navbar-height:59px;
+}
+/*Navigation Bar*/
+#navbar{
+    display:flex;
+    /*align-items: center;
+    */
+}
+/*Navigation Bar : Logo and Image*/
+#logo{
+    margin: 0px 0px;
+
+}
+#logo img{
+    height: 70px;
+    margin: 0px 0px;
+}
+/*Navigation Bar: List styling*/
+#navbar{
+    position: relative;
+}
+#navbar ul::before{
+    content: "";
+    background-color: rgb(58, 82, 62);
+    position: absolute;
+    height: 96%;
+    width: 100%;
+    z-index: -1;
+    /*opacity:0.4; 
+*/
+}
+#navbar ul{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+#navbar ul li{
+    list-style: none;
+    padding: 18px;
+    font-size: 1.3rem;
+
+}
+#navbar ul li a{
+    color:white;
+    display: block;
+    padding: 4px 8px;
+    border-radius: 25px;
+    text-decoration: none;
+
+}
+
+#navbar ul li a:hover{
+    color:rgb(35, 44, 36);
+    background-color: rgb(142, 236, 170);
+
+}
+
+
